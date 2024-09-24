@@ -24,3 +24,11 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+
+    # Create APK Debug
+    - name: Build apk debug project (APK)
+      run: ./gradlew assembleDebug
+
+    # Create APK Release
+    - name: Build apk release project (APK)
+      run: ./gradlew assemble
